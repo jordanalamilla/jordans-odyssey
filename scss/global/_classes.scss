@@ -1,0 +1,52 @@
+.display-block {
+    display: block;
+}
+
+// Badges
+.badge {
+    @include h5-font-style;
+    border-radius: unset;
+    padding: 2px 5px;
+    color: $white;
+
+    &.bg-light,
+    &.bg-white {
+        color: $body-color;
+    }
+}
+
+// Buttons
+.btn {
+    @include h6-font-style;
+    width: fit-content;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 15px;
+}
+
+.btn-success {
+    color: $white;
+}
+
+// Signatures
+.sig {
+    @include bg-image-contain;
+    width: 100%;
+    max-width: 200px;
+    height: 88px;
+
+    &.sig-light {
+        background-image: url('images/logos/logo-light.png');
+    }
+
+    &.sig-dark {
+        background-image: url('images/logos/logo.png');
+    }
+}
+
+// Bootstrap custom classes
+.col-lg-5 {
+    @include media-breakpoint-up(lg) {
+        width: 20%;
+    }
+}

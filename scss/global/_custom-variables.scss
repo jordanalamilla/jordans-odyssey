@@ -1,0 +1,42 @@
+// Colors
+$primary: #486e93;
+$secondary: #944747;
+$success: #649a4a;
+$danger: #ff0000;
+$light: #FAF7F0;
+$dark: #000;
+$white: #FFFFFF;
+
+$body-color: $dark;
+
+// Fonts
+$font-family-helvetica: Helvetica, Arial, sans-serif;
+$font-family-inconsolata: "Inconsolata", monospace;
+$font-family-archivo: "Archivo", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-base: $font-family-roboto;
+
+// Font sizes
+$font-size-base: 1rem;
+$font-size-sm: 0.875rem;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1;
+$h4-font-size: $font-size-base * 1;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base * 1;
+$blockquote-font-size: $font-size-base * 1.92857143;
+
+$h1-font-size-sm: $font-size-sm * 3;
+$h2-font-size-sm: $font-size-sm * 2;
+$h3-font-size-sm: $font-size-sm * 1;
+$h4-font-size-sm: $font-size-sm * 1;
+$h5-font-size-sm: $font-size-sm * 1;
+$h6-font-size-sm: $font-size-sm * 1;
+$blockquote-font-size-sm: $font-size-sm * 1.92857143;
+
+$headings-margin-bottom: 0.5em;
+$line-height-base: 1.8;
+
+$btn-close-bg: url('images/icons/close-white.svg');

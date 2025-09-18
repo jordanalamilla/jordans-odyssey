@@ -1,0 +1,22 @@
+// Menu
+.menu {
+    padding-inline-start: unset;
+    list-style-type: none;
+    margin-bottom: unset;
+    display: flex;
+    gap: 15px;
+
+    a {
+        @include transition;
+        @include h5-font-style;
+        color: $body-color;
+        font-size: $h6-font-size;
+    }
+}
+
+header,
+footer {
+    .menu {
+        justify-content: flex-end;
+    }
+}

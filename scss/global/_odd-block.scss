@@ -1,0 +1,98 @@
+.odd-block {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    // Background image
+    &.has-background-image {
+        @include bg-image;
+    }
+
+    // Background color spacing removal
+    &:not(.slider-block.width-container-fluid) {
+
+        &.bg-none+.bg-none,
+        &.bg-primary+.bg-primary,
+        &.bg-secondary+.bg-secondary,
+        &.bg-light+.bg-light,
+        &.bg-dark+.bg-dark {
+            padding-top: 0;
+        }
+    }
+
+    // Alignments
+    &.align-left {
+        .block-btn-wrapper {
+            text-align: left;
+        }
+    }
+
+    &.align-right {
+        .block-btn-wrapper {
+            text-align: right;
+        }
+    }
+
+    &.align-center {
+        .block-btn-wrapper {
+            text-align: center;
+        }
+    }
+
+    // Block header
+    .block-header {
+        margin-bottom: 50px;
+
+        .intro-content-wrapper {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+    }
+
+    // Action link
+    .block-btn-wrapper {
+        margin-top: 30px;
+    }
+
+    // Background colour changes
+    &.bg-none,
+    &.bg-light {
+        .block-btn {
+            @extend .btn;
+            @extend .btn-primary;
+        }
+    }
+
+    &.bg-primary,
+    &.bg-secondary,
+    &.bg-dark {
+
+        .intro-content-wrapper,
+        .content-wrapper,
+        .cc-link {
+
+            h3,
+            .h3 {
+                @extend .bg-light;
+
+                &>a {
+                    color: $body-color;
+                }
+            }
+
+            &,
+            a {
+                color: $white;
+            }
+        }
+
+        .block-btn {
+            @extend .btn;
+            @extend .btn-light;
+        }
+    }
+}

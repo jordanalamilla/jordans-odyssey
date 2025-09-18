@@ -1,0 +1,42 @@
+.wpcf7-form {
+
+    // Labels
+    label {
+        @include h6-font-style;
+        padding: 10px 0;
+    }
+
+    // Inputs
+    input:not([type=submit]),
+    select,
+    textarea {
+        @include p-font-style;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid $dark;
+    }
+
+    p {
+        margin-bottom: unset;
+    }
+
+    input[type=submit] {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    select {
+        @include bg-image-contain;
+        appearance: none;
+        border-radius: 0;
+        background-image: url('/wp-content/themes/jordans-odyssey/images/icons/arrow-down-dark.svg');
+        background-size: 20px;
+        background-position: center right 10px;
+    }
+
+    // Errors
+    .wpcf7-not-valid-tip {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

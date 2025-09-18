@@ -1,0 +1,64 @@
+.fbx-rounded {
+    .fbx-inner {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .fbx-item-image,
+    .fbx-item-current {
+        border-radius: 0
+    }
+
+    // Close button
+    .fbx-close {
+        @include bg-image-contain;
+        background-color: unset;
+        background-size: 25px;
+        border-radius: 0;
+        border: 0;
+        box-shadow: unset;
+        top: -30px;
+        right: -30px;
+        background-image: url('images/icons/close-white.svg');
+
+        svg {
+            display: none;
+        }
+    }
+
+    // Controls
+    .fbx-btn-shadow {
+
+        &.fbx-next,
+        &.fbx-prev {
+            @include bg-image-contain;
+            background: unset;
+            background-repeat: no-repeat !important;
+            background-position: center;
+            box-shadow: none !important;
+            color: white !important;
+
+            svg {
+                display: none;
+            }
+        }
+
+        &.fbx-next {
+            background-image: url('images/icons/arrow-right.svg');
+        }
+
+        &.fbx-prev {
+            background-image: url('images/icons/arrow-left.svg');
+        }
+    }
+}
+
+.fbx-rounded.fbx-light {
+    background-color: rgba($dark, 0.9);
+
+    .fbx-count {
+        @include h6-font-style;
+        color: $white;
+        bottom: -30px;
+    }
+}

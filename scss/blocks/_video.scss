@@ -1,0 +1,17 @@
+.video-block {
+    .video-modal-button {
+        @include shadow;
+        @include hover-style;
+        border: 0;
+    }
+
+    .video-thumbnail-play-icon {
+        box-shadow: 0px 0px 30px black;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    // Modal
+    .modal {
+        background-color: rgba($dark, 0.9);
+    }
+}

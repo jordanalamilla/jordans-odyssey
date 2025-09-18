@@ -1,0 +1,22 @@
+.icon-links {
+    display: flex;
+    gap: 15px;
+
+    a.il-link {
+        text-decoration: none;
+
+        span.il-icon {
+            @include bg-image;
+            @include transition;
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover,
+        &:focus {
+            span.il-icon {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

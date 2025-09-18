@@ -1,0 +1,21 @@
+.gallery-block {
+
+    // Image
+    .g-image {
+        @include shadow;
+    }
+
+    // Modal
+    &.has-modal {
+        .g-image-wrapper {
+            @include hover-style;
+        }
+    }
+
+    // Cover
+    &.image-size-cover {
+        .g-image {
+            aspect-ratio: 1/1;
+        }
+    }
+}

@@ -1,0 +1,209 @@
+@mixin p-font-style {
+    font-family: $font-family-inconsolata;
+    font-size: $font-size-base;
+    font-weight: 400;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $font-size-sm;
+    }
+}
+
+@mixin h1-font-style {
+    font-family: $font-family-archivo;
+    font-weight: 800;
+    font-size: $h1-font-size;
+    line-height: 1;
+    // letter-spacing: -2px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h1-font-size-sm;
+    }
+}
+
+@mixin h2-font-style {
+    font-family: $font-family-helvetica;
+    font-weight: 600;
+    font-size: $h2-font-size;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h2-font-size-sm;
+    }
+}
+
+@mixin h3-font-style {
+    @extend .badge;
+    @extend .bg-dark;
+    font-family: $font-family-inconsolata;
+    font-weight: 600;
+    font-size: $h3-font-size;
+    text-transform: uppercase;
+    width: fit-content;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h3-font-size-sm;
+    }
+}
+
+@mixin h4-font-style {
+    font-family: $font-family-inconsolata;
+    font-weight: 800;
+    font-size: $h4-font-size;
+    text-transform: uppercase;
+    line-height: $line-height-base;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h4-font-size-sm;
+    }
+}
+
+@mixin h5-font-style {
+    font-family: $font-family-inconsolata;
+    font-weight: 600;
+    font-size: $h5-font-size;
+    text-transform: uppercase;
+    line-height: $line-height-base;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h5-font-size-sm;
+    }
+}
+
+@mixin h6-font-style {
+    font-family: $font-family-inconsolata;
+    font-weight: 600;
+    font-size: $h6-font-size;
+    line-height: $line-height-base;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h6-font-size-sm;
+    }
+}
+
+// @mixin blockquote-font-style {
+//     font-family: $font-family-roboto;
+//     font-weight: 300;
+//     font-size: $blockquote-font-size;
+//     line-height: 1.8;
+
+//     @include media-breakpoint-down(sm) {
+//         font-size: $blockquote-font-size-sm;
+//     }
+// }
+
+h1,
+.h1 {
+
+    &,
+    &>a {
+        @include h1-font-style();
+    }
+}
+
+h2,
+.h2 {
+
+    &,
+    &>a {
+        @include h2-font-style();
+    }
+}
+
+h3,
+.h3 {
+
+    &,
+    &>a {
+        @include h3-font-style();
+    }
+
+    &>a {
+        background-color: unset !important;
+    }
+}
+
+h4,
+.h4 {
+
+    &,
+    &>a {
+        @include h4-font-style();
+    }
+}
+
+h5,
+.h5 {
+
+    &,
+    &>a {
+        @include h5-font-style();
+    }
+}
+
+h6,
+.h6 {
+
+    &,
+    &>a {
+        @include h6-font-style();
+    }
+}
+
+p,
+.p,
+li {
+    @include p-font-style();
+}
+
+// blockquote,
+// blockquote p,
+// .blockquote {
+//     @include blockquote-font-style();
+// }
+
+a {
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+strong {
+    font-weight: 700;
+}
+
+.content-wrapper {
+
+    h1,
+    h2,
+    h4,
+    h5,
+    h6 {
+
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

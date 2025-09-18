@@ -1,0 +1,36 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.home-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    // Sections
+    .home-section {
+        h1 {
+            margin-bottom: unset;
+        }
+    }
+
+    // Image
+    .image-rotisserator {
+        .ir-image {
+            @include bg-image-contain;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    // Menu
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

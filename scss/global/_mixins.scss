@@ -1,0 +1,28 @@
+@mixin bg-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin bg-image-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin transition {
+    transition: 0.2s ease all;
+}
+
+@mixin shadow {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin hover-style {
+    @include transition();
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+    }
+}

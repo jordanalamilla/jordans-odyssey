@@ -10,20 +10,20 @@ $white: #FFFFFF;
 $body-color: $dark;
 
 // Fonts
-$font-family-helvetica: Helvetica, Arial, sans-serif;
-$font-family-inconsolata: "Inconsolata", monospace;
-$font-family-archivo: "Archivo", sans-serif;
-$font-family-roboto: "Roboto", sans-serif;
-$font-family-base: $font-family-roboto;
+$font-family-helvetica: 'Helvetica Black', Arial, sans-serif;
+$font-family-arial: Arial, sans-serif;
+$font-family-inconsolata: "Inconsolata", courier, monospace;
+$font-family-base: $font-family-arial;
+$font-family-monospace: $font-family-inconsolata;
 
 // Font sizes
-$font-size-base: 1rem;
+$font-size-base: 0.875rem;
 $font-size-sm: 0.875rem;
 
-$h1-font-size: $font-size-base * 3;
-$h2-font-size: $font-size-base * 2;
-$h3-font-size: $font-size-base * 1;
-$h4-font-size: $font-size-base * 1;
+$h1-font-size: $font-size-base * 3.5;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1;
 $h6-font-size: $font-size-base * 1;
 $blockquote-font-size: $font-size-base * 1.92857143;

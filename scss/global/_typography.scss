@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Helvetica Black';
+    src: url('../../fonts/Helvetica-Black.otf');
+}
+
 @mixin p-font-style {
-    font-family: $font-family-inconsolata;
+    font-family: $font-family-arial;
     font-size: $font-size-base;
-    font-weight: 400;
+    font-weight: 300;
 
     @include media-breakpoint-down(sm) {
         font-size: $font-size-sm;
@@ -9,7 +14,7 @@
 }
 
 @mixin h1-font-style {
-    font-family: $font-family-archivo;
+    font-family: 'Helvetica Black', sans-serif;
     font-weight: 800;
     font-size: $h1-font-size;
     line-height: 1;
@@ -32,13 +37,10 @@
 }
 
 @mixin h3-font-style {
-    @extend .badge;
-    @extend .bg-dark;
-    font-family: $font-family-inconsolata;
+    font-family: $font-family-arial;
     font-weight: 600;
     font-size: $h3-font-size;
     text-transform: uppercase;
-    width: fit-content;
 
     @include media-breakpoint-down(sm) {
         font-size: $h3-font-size-sm;
@@ -46,10 +48,9 @@
 }
 
 @mixin h4-font-style {
-    font-family: $font-family-inconsolata;
-    font-weight: 800;
+    font-family: $font-family-arial;
+    font-weight: 600;
     font-size: $h4-font-size;
-    text-transform: uppercase;
     line-height: $line-height-base;
 
     @include media-breakpoint-down(sm) {
@@ -59,7 +60,7 @@
 
 @mixin h5-font-style {
     font-family: $font-family-inconsolata;
-    font-weight: 600;
+    font-weight: 800;
     font-size: $h5-font-size;
     text-transform: uppercase;
     line-height: $line-height-base;
@@ -70,10 +71,8 @@
 }
 
 @mixin h6-font-style {
-    font-family: $font-family-inconsolata;
-    font-weight: 600;
-    font-size: $h6-font-size;
-    line-height: $line-height-base;
+    @include h5-font-style();
+    font-weight: 400;
 
     @include media-breakpoint-down(sm) {
         font-size: $h6-font-size-sm;

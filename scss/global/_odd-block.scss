@@ -75,15 +75,6 @@
         .content-wrapper,
         .cc-link {
 
-            h3,
-            .h3 {
-                @extend .bg-light;
-
-                &>a {
-                    color: $body-color;
-                }
-            }
-
             &,
             a {
                 color: $white;

@@ -9,8 +9,11 @@
     a {
         @include transition;
         @include h5-font-style;
-        color: $body-color;
         font-size: $h6-font-size;
+
+        &:before {
+            content: '/';
+        }
     }
 }
 

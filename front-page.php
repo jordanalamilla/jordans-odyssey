@@ -10,37 +10,25 @@ get_header();
 
 <section class="home-container">
 	<div class="container">
+
+		<!-- Image -->
 		<div class="row">
 			<div class="col-12">
-				<div class="home-content-wrapper">
+				<div class="home-image">
+					<img src="<?php echo esc_html( get_stylesheet_directory_uri() ) . '/images/logos/signature-2025.svg'; ?>" alt="">
+				</div>
+			</div>
+		</div>
 
-					<!-- Image -->
-					<div class="home-section">
-						<?php get_template_part( 'template-parts/home/image-rotisserator' ); ?>
-					</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="home-menu">
+					<h2 class="p">Artist & Web Developer for Hire</h2>
+					<a href="mailto:<?php echo bloginfo( 'admin_email' ); ?>" target="_blank">
+						<h6><?php echo bloginfo( 'admin_email' ); ?></h6>
+					</a>
 
-					<!-- Title -->
-					<div class="home-section">
-						<h1 class="h6 badge bg-dark">
-							<?php echo esc_attr( bloginfo( 'title' ) ); ?>
-						</h1>
-					</div>
-
-					<!-- Menu -->
-					<div class="home-section">
-						<?php
-						wp_nav_menu(
-							array(
-								'menu' => 'primary-menu',
-							)
-						);
-						?>
-					</div>
-
-					<!-- Icons -->
-					<div class="home-section">
-						<?php get_template_part( 'template-parts/icons' ); ?>
-					</div>
+					<?php get_template_part( 'template-parts/icons' ); ?>
 				</div>
 			</div>
 		</div>

@@ -12588,6 +12588,9 @@ body {
 body.home {
   padding-top: 0;
 }
+body.scrolled header #menu-primary-menu a, body.mobile-menu-open header #menu-primary-menu a {
+  color: #486e93;
+}
 
 .odd-footer {
   padding: 30px 0;

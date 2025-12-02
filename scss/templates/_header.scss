@@ -4,4 +4,11 @@ body {
     &.home {
         padding-top: 0;
     }
+
+    &.scrolled,
+    &.mobile-menu-open {
+        header #menu-primary-menu a {
+            color: $primary;
+        }
+    }
 }

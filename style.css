@@ -12350,6 +12350,9 @@ strong {
 .fbx-rounded .fbx-btn-shadow.fbx-prev {
   background-image: url("images/icons/arrow-left.svg");
 }
+.fbx-rounded .fbx-caption {
+  display: none;
+}
 
 .fbx-rounded.fbx-light {
   background-color: rgba(0, 0, 0, 0.9);

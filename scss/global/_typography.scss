@@ -51,7 +51,7 @@
     font-family: $font-family-arial;
     font-weight: 600;
     font-size: $h4-font-size;
-    line-height: $line-height-base;
+    line-height: 1.5;
 
     @include media-breakpoint-down(sm) {
         font-size: $h4-font-size-sm;

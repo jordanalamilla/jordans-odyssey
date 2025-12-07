@@ -32,8 +32,8 @@
 .sig {
     @include bg-image-contain;
     width: 100%;
-    max-width: 200px;
-    height: 88px;
+    max-width: 250px;
+    height: 160px;
 
     &.sig-light {
         background-image: url('images/logos/logo-light.png');

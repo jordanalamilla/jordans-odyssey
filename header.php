@@ -17,7 +17,13 @@ wp_head();
 	<link rel="manifest" href="<?php echo esc_attr( get_stylesheet_directory_uri() ); ?>/favicon/site.webmanifest">
 
 	<title>
-		<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>
+		<?php
+		if ( is_archive( 'project' ) ) {
+			echo 'Artwork - ' . esc_attr( get_bloginfo( 'title' ) );
+		} else {
+			echo esc_html( get_the_title() ) . ' - ' . esc_attr( get_bloginfo( 'title' ) );
+		}
+		?>
 	</title>
 </head>
 

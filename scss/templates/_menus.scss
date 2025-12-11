@@ -8,7 +8,7 @@
 
     a {
         @include transition;
-        @include h5-font-style;
+        @include h6-font-style;
         font-size: $h6-font-size;
 
         &:before {

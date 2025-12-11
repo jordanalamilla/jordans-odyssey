@@ -12440,7 +12440,13 @@ strong {
   font-size: 1rem;
   text-transform: uppercase;
   line-height: 1.8;
+  font-weight: 400;
   font-size: 1rem;
+}
+@media (max-width: 575.98px) {
+  .menu a {
+    font-size: 0.875rem;
+  }
 }
 @media (max-width: 575.98px) {
   .menu a {

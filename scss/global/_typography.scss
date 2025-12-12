@@ -30,6 +30,7 @@
     font-family: $font-family-helvetica;
     font-weight: 600;
     font-size: $h2-font-size;
+    letter-spacing: -1px;
 
     @include media-breakpoint-down(sm) {
         font-size: $h2-font-size-sm;
@@ -78,17 +79,6 @@
         font-size: $h6-font-size-sm;
     }
 }
-
-// @mixin blockquote-font-style {
-//     font-family: $font-family-roboto;
-//     font-weight: 300;
-//     font-size: $blockquote-font-size;
-//     line-height: 1.8;
-
-//     @include media-breakpoint-down(sm) {
-//         font-size: $blockquote-font-size-sm;
-//     }
-// }
 
 h1,
 .h1 {
@@ -179,8 +169,6 @@ strong {
     h4,
     h5,
     h6 {
-
-        padding-top: 1rem;
         margin-bottom: 1rem;
     }
 

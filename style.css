@@ -250,11 +250,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.425rem + 2.1vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -8388,7 +8388,7 @@ textarea.form-control-lg {
 }
 
 .fs-2 {
-  font-size: calc(1.425rem + 2.1vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-3 {
@@ -11950,7 +11950,7 @@ textarea.form-control-lg {
     font-size: 3.5rem !important;
   }
   .fs-2 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   .fs-3 {
     font-size: 1.5rem !important;
@@ -12017,7 +12017,8 @@ h2,
 .h2 > a {
   font-family: "Helvetica Black", Arial, sans-serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
+  letter-spacing: -1px;
 }
 @media (max-width: 575.98px) {
   h2,
@@ -12137,7 +12138,6 @@ strong {
 .content-wrapper .h5,
 .content-wrapper h6,
 .content-wrapper .h6 {
-  padding-top: 1rem;
   margin-bottom: 1rem;
 }
 .content-wrapper h3, .content-wrapper .h3 {
@@ -12670,6 +12670,9 @@ body.home .home-menu {
   align-items: center;
   flex-direction: column;
   gap: 5px;
+}
+body.home .home-menu h2, body.home .home-menu .h2 {
+  letter-spacing: unset;
 }
 body.home .icon-links {
   margin-top: 15px;

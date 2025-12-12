@@ -21,6 +21,10 @@ body.home {
         align-items: center;
         flex-direction: column;
         gap: 5px;
+
+        h2 {
+            letter-spacing: unset;
+        }
     }
 
     // Icons

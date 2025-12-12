@@ -23,7 +23,9 @@ get_header();
 		<div class="row">
 			<div class="col-12">
 				<div class="home-menu">
-					<h2 class="p">Artist & Web Developer for Hire</h2>
+					<h2 class="p">
+						<?php echo bloginfo( 'description' ); ?>
+					</h2>
 					<a href="mailto:<?php echo bloginfo( 'admin_email' ); ?>" target="_blank">
 						<h6><?php echo bloginfo( 'admin_email' ); ?></h6>
 					</a>

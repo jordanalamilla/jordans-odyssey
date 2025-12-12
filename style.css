@@ -12448,6 +12448,7 @@ strong {
   line-height: 1.8;
   font-weight: 400;
   font-size: 1rem;
+  text-decoration: none;
 }
 @media (max-width: 575.98px) {
   .menu a {
@@ -12458,6 +12459,9 @@ strong {
   .menu a {
     font-size: 0.875rem;
   }
+}
+.menu a:hover, .menu a:focus {
+  text-decoration: underline;
 }
 .menu a:before {
   content: "/";
@@ -12599,7 +12603,7 @@ body.home {
   padding-top: 0;
 }
 body.scrolled header #menu-primary-menu a, body.mobile-menu-open header #menu-primary-menu a {
-  color: #486e93;
+  color: #000;
 }
 
 .odd-footer {

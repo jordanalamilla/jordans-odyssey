@@ -10,6 +10,12 @@
         @include transition;
         @include h6-font-style;
         font-size: $h6-font-size;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
 
         &:before {
             content: '/';

@@ -10,6 +10,7 @@
         @include transition;
         @include h6-font-style;
         font-size: $h6-font-size;
+        color: $dark;
         text-decoration: none;
 
         &:hover,

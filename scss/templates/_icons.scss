@@ -20,3 +20,27 @@
         }
     }
 }
+
+// Text link layout
+.icon-text-links {
+    ul {
+        list-style-type: none;
+        padding-inline-start: 0;
+        margin-bottom: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        @include h6-font-style;
+        color: $dark;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+}

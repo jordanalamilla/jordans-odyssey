@@ -30,7 +30,7 @@ get_header();
 						<h6><?php echo bloginfo( 'admin_email' ); ?></h6>
 					</a>
 
-					<?php get_template_part( 'template-parts/icons' ); ?>
+					<?php get_template_part( 'template-parts/icon-text-list' ); ?>
 				</div>
 			</div>
 		</div>

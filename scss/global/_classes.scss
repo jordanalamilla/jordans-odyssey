@@ -4,7 +4,7 @@
 
 // Badges
 .badge {
-    @include h5-font-style;
+    @include h6-font-style;
     border-radius: unset;
     padding: 2px 5px;
     color: $white;

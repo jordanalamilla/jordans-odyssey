@@ -12238,9 +12238,15 @@ strong {
   font-size: 1rem;
   text-transform: uppercase;
   line-height: 1.8;
+  font-weight: 400;
   border-radius: unset;
   padding: 2px 5px;
   color: #FFFFFF;
+}
+@media (max-width: 575.98px) {
+  .badge {
+    font-size: 0.875rem;
+  }
 }
 @media (max-width: 575.98px) {
   .badge {
@@ -12548,6 +12554,9 @@ body.home .banner {
   z-index: 1;
   right: 0;
 }
+.card h2.card-title, .card .card-title.h2 {
+  letter-spacing: unset;
+}
 .card .card-body {
   padding: 15px 0 0;
 }
@@ -12648,6 +12657,38 @@ body.scrolled header #menu-primary-menu a, body.mobile-menu-open header #menu-pr
 }
 .icon-links a.il-link:hover span.il-icon, .icon-links a.il-link:focus span.il-icon {
   transform: scale(1.1);
+}
+
+.icon-text-links ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-bottom: 0;
+}
+.icon-text-links li {
+  margin: 10px 0;
+}
+.icon-text-links a {
+  font-family: "Inconsolata", courier, monospace;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+@media (max-width: 575.98px) {
+  .icon-text-links a {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .icon-text-links a {
+    font-size: 0.875rem;
+  }
+}
+.icon-text-links a:hover, .icon-text-links a:focus {
+  text-decoration: underline;
 }
 
 body.home {
